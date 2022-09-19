@@ -4,25 +4,27 @@ import WebsiteIcon from '../assets/icon-website.svg';
 import TwitterIcon from '../assets/icon-twitter.svg';
 import CompanyIcon from '../assets/icon-company.svg';
 
-const UserProfileLinks = () => {
+const UserProfileLinks = props => {
   return (
     <Fragment>
       <ul className="user-links">
         <li>
           <img src={LocationIcon} alt=""></img>
-          <p>San Francisco</p>
+          <p>{props.location === null ? 'Not Available' : props.location}</p>
         </li>
         <li>
           <img src={WebsiteIcon} alt=""></img>
-          <a href="https://github.blog">https://github.blog</a>
+          <a href={props.website === '' ? '#' : props.website}>
+            {props.website === '' ? 'Not Available' : props.website}
+          </a>
         </li>
         <li>
           <img src={TwitterIcon} alt=""></img>
-          <p>Not Available</p>
+          <p>{props.twitter === null ? 'Not Available' : props.twitter}</p>
         </li>
         <li>
           <img src={CompanyIcon} alt=""></img>
-          <p>@github</p>
+          <p>{props.company === null ? 'Not Available' : props.company}</p>
         </li>
       </ul>
     </Fragment>

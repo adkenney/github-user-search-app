@@ -1,19 +1,19 @@
 import React from 'react';
 
-const UserProfileStats = () => {
+const UserProfileStats = props => {
   return (
     <div className="profile-stats">
       <div>
         <h4>Repos</h4>
-        <p>8</p>
+        <p>{props.repos}</p>
       </div>
       <div>
         <h4>Followers</h4>
-        <p>3938</p>
+        <p>{props.followers}</p>
       </div>
       <div>
         <h4>Following</h4>
-        <p>9</p>
+        <p>{props.following}</p>
       </div>
     </div>
   );

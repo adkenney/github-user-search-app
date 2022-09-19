@@ -120,6 +120,11 @@ h4 {
   font-size: 0.8125rem;
   line-height: 1.25rem;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
 .container,
 header,
 .theme-toggle,
@@ -202,6 +207,7 @@ header {
 
 .profile-description img {
   border-radius: 50%;
+  width: 100px;
 }
 
 .profile-description > div {
