@@ -4,10 +4,15 @@ import SearchIcon from '../assets/icon-search.svg';
 const SearchBar = props => {
   const userInputRef = useRef();
   // function to lift current user input to fetch function
-  const searchUserHandler = event => {
-    event.preventDefault();
+  const searchUserHandler = () => {
     const enteredUser = userInputRef.current.value;
     props.userSearchHandler(enteredUser);
+  };
+
+  const enterKeyHandler = event => {
+    if (event.key === 'Enter') {
+      searchUserHandler();
+    }
   };
 
   return (
@@ -20,6 +25,7 @@ const SearchBar = props => {
         id="user-search"
         placeholder="Search GitHub username..."
         ref={userInputRef}
+        onKeyDown={enterKeyHandler}
       />
       <button onClick={searchUserHandler}>Search</button>
     </div>

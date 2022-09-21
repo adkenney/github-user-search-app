@@ -4,6 +4,7 @@ import SearchBar from './components/SearchBar';
 import UserCard from './components/UserCard';
 
 function App() {
+  const [theme, setTheme] = useState('light');
   const [user, setUser] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -37,9 +38,13 @@ function App() {
     fetchUserHandler('octocat');
   }, [fetchUserHandler]);
 
+  const toggleTheme = () => {
+    setTheme(curr => (curr === 'light' ? 'dark' : 'light'));
+  };
+
   return (
-    <div className="container">
-      <Header />
+    <div className="container" id={theme}>
+      <Header theme={theme} themeHandler={toggleTheme} />
       <SearchBar userSearchHandler={fetchUserHandler} />
       <main>
         {!isLoading && user && <UserCard userData={user} />}

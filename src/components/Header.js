@@ -1,13 +1,18 @@
 import React from 'react';
 import DarkIcon from '../assets/icon-moon.svg';
+import LightIcon from '../assets/icon-sun.svg';
 
-const Header = () => {
+const Header = props => {
   return (
     <header>
       <h1>devfinder</h1>
       <div className="theme-toggle">
-        <p>DARK</p>
-        <img src={DarkIcon} alt="theme toggle"></img>
+        <p>{props.theme === 'light' ? 'dark' : 'light'}</p>
+        <img
+          src={props.theme === 'light' ? `${DarkIcon}` : `${LightIcon}`}
+          onClick={props.themeHandler}
+          alt="theme toggle"
+        ></img>
       </div>
     </header>
   );
