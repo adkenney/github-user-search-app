@@ -27,6 +27,7 @@ const SearchBar = props => {
         ref={userInputRef}
         onKeyDown={enterKeyHandler}
       />
+      {props.error && <div className="error">{props.error}</div>}
       <button onClick={searchUserHandler}>Search</button>
     </div>
   );

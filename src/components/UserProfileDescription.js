@@ -16,12 +16,16 @@ const UserProfileDescription = props => {
       <div className="profile-description">
         <img className="profile-img" src={props.avatar} alt="avatar"></img>
         <div>
-          <h1>{props.username}</h1>
-          <h3>@{props.login}</h3>
-          <p>{`${day} ${monthText} ${year}`}</p>
+          <div className="username">
+            <h1>{props.username}</h1>
+            <h3>@{props.login}</h3>
+          </div>
+          <p>{`Joined ${day} ${monthText} ${year}`}</p>
         </div>
       </div>
-      <p>{props.bio === null ? 'This user has no bio.' : props.bio}</p>
+      <div class="bio">
+        <p>{props.bio === null ? 'This user has no bio.' : props.bio}</p>
+      </div>
     </Fragment>
   );
 };
