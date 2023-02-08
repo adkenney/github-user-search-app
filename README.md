@@ -1,4 +1,4 @@
-# Frontend Mentor - GitHub user search app solution
+# GitHub user search app
 
 This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -16,8 +16,6 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,85 +31,40 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://user-images.githubusercontent.com/31222712/217413499-7a694c91-7b71-4226-a458-74a9b1dd5c4e.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](https://user-images.githubusercontent.com/31222712/217413580-4c1048e2-1af7-427e-9469-99a21147429d.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/github-user-search-using-react-Lt63w_M4oq)
+- Live Site URL: [Here](https://adkenney-github-search.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- [React](https://reactjs.org/) - JS library
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+This project helped me get more experience with handling API calls in React. I also implemented a light and dark mode for the first time as well. Overall this project is another step to learning how to style webpages as well.
 
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+One thing I wish to look into is implementing the prefered theme depending on user computer preference.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [React The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) - This has been my main source for learning some nuances of react.
+- [Kevin Powell YouTube](https://www.youtube.com/@KevinPowell) - Kevin Powell's YouTube page has been a tremendous help for me as a CSS resource.
 
 ## Author
+- Frontend Mentor - [@adkenney](https://www.frontendmentor.io/profile/adkenney)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I would like to give my acknowledgments to the Frontend Mentor website and especially the community for being such a helpful resource while learning!
